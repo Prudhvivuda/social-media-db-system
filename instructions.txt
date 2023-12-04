@@ -1,0 +1,4 @@
+# run this
+pip install Flask Flask-RESTful SQLAlchemy
+
+pip install mysql-connector
