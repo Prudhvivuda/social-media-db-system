@@ -12,9 +12,10 @@ def insert_data():
         
     cursor.execute(sql_insert)
     conn.commit()
-    print("Data inserted!")
+    
+    print("Data Inserted Successfully!")
 
     cursor.close()
     conn.close()
 
-    return 'Data inserted successfully'
+    return 'Data Inserted Successfully'

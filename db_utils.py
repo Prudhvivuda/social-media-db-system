@@ -2,7 +2,7 @@ import mysql.connector
 
 def connect_to_db():
     
-    print("Connecting to the database")
+    print("Connecting to the Social Media Database")
     
     db_connection = mysql.connector.connect(
         host="127.0.0.1",
@@ -11,6 +11,6 @@ def connect_to_db():
         database="smdb"
     )
     
-    print("Connection established!")
+    print("Connection Established!")
     
     return db_connection
