@@ -6,11 +6,12 @@ def delete_data():
     cursor = conn.cursor()
 
     data = request.get_json()
-    id = data['id']
+    # id = data['id']
 
-    sql_delete = "DELETE FROM table_name WHERE id = %s"
-    data = (id,)
-    cursor.execute(sql_delete, data)
+    sql_query= "DELETE FROM table_name WHERE id = %s"
+    # data = (id,)
+    # cursor.execute(sql_delete, data)
+    cursor.execute(sql_query)
 
     conn.commit()
 
