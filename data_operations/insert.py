@@ -19,9 +19,9 @@ def insert_data():
         values.remove(table_name)
         
         print(f"Inserting into {table_name}")
-        sql_insert = f"INSERT INTO {table_name} ({', '.join(columns)}) VALUES ({', '.join(['%s' for _ in values])})"
+        sql_query = f"INSERT INTO {table_name} ({', '.join(columns)}) VALUES ({', '.join(['%s' for _ in values])})"
 
-        cursor.execute(sql_insert, values)
+        cursor.execute(sql_query, values)
         conn.commit()
 
         print(f"Data inserted into {table_name} successfully!")
