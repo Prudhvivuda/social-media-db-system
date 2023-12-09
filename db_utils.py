@@ -7,8 +7,8 @@ def connect_to_db():
     db_connection = mysql.connector.connect(
         host="127.0.0.1",
         user="root",
-        password="12345678",
-        database="smdb"
+        password="mysql@304",
+        database="social_media_db"
     )
     
     print("Connection Established!")
